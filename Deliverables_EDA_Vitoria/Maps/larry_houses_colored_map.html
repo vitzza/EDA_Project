@@ -1,0 +1,899 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_25df3e4e908f4f0e398ee09455d12c4f {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_25df3e4e908f4f0e398ee09455d12c4f" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_25df3e4e908f4f0e398ee09455d12c4f = L.map(
+                "map_25df3e4e908f4f0e398ee09455d12c4f",
+                {
+                    center: [47.42719523809524, -122.36138095238096],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 10,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_dbd473ece765afa9cd7017ec4e849540 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_dbd473ece765afa9cd7017ec4e849540.addTo(map_25df3e4e908f4f0e398ee09455d12c4f);
+        
+    
+            var marker_33b02de1648eb541c74e2eee8c125690 = L.marker(
+                [47.3811, -122.325],
+                {
+}
+            ).addTo(map_25df3e4e908f4f0e398ee09455d12c4f);
+        
+    
+            var icon_e8215f265eaf06ebe2e9cb8998d21f1d = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_a1c1f59978c255d2c07a6e4af63fef41 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_8631aa7ab8ab2717bbeb590d1ee2d3c7 = $(`<div id="html_8631aa7ab8ab2717bbeb590d1ee2d3c7" style="width: 100.0%; height: 100.0%;">     <b>Price:</b> $357,000<br>     <b>Bedrooms:</b> 3.0<br>     <b>Lot Size:</b> 53882.0 sqft<br>     <b>Condition:</b> 3<br>     <b>View:</b> 4.0     </div>`)[0];
+                popup_a1c1f59978c255d2c07a6e4af63fef41.setContent(html_8631aa7ab8ab2717bbeb590d1ee2d3c7);
+            
+        
+
+        marker_33b02de1648eb541c74e2eee8c125690.bindPopup(popup_a1c1f59978c255d2c07a6e4af63fef41)
+        ;
+
+        
+    
+    
+                marker_33b02de1648eb541c74e2eee8c125690.setIcon(icon_e8215f265eaf06ebe2e9cb8998d21f1d);
+            
+    
+            var marker_a1462ce99964d56bdcb63a556cc07a03 = L.marker(
+                [47.4551, -122.373],
+                {
+}
+            ).addTo(map_25df3e4e908f4f0e398ee09455d12c4f);
+        
+    
+            var icon_2a7915cd95ca365230efa4ac7bf1f988 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_edd00794a0c0f9a23a4aa07e084ef214 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_bbb94c6de2fe9d93ed1bd9c231dc21ba = $(`<div id="html_bbb94c6de2fe9d93ed1bd9c231dc21ba" style="width: 100.0%; height: 100.0%;">     <b>Price:</b> $380,000<br>     <b>Bedrooms:</b> 3.0<br>     <b>Lot Size:</b> 17342.0 sqft<br>     <b>Condition:</b> 3<br>     <b>View:</b> 4.0     </div>`)[0];
+                popup_edd00794a0c0f9a23a4aa07e084ef214.setContent(html_bbb94c6de2fe9d93ed1bd9c231dc21ba);
+            
+        
+
+        marker_a1462ce99964d56bdcb63a556cc07a03.bindPopup(popup_edd00794a0c0f9a23a4aa07e084ef214)
+        ;
+
+        
+    
+    
+                marker_a1462ce99964d56bdcb63a556cc07a03.setIcon(icon_2a7915cd95ca365230efa4ac7bf1f988);
+            
+    
+            var marker_75e8a740b384f2ad463f3e0727ca1eee = L.marker(
+                [47.3338, -122.511],
+                {
+}
+            ).addTo(map_25df3e4e908f4f0e398ee09455d12c4f);
+        
+    
+            var icon_146a9389f74463ed2f139e74c46b06cb = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_92e39da68c095bd736e9f5b19becf8e1 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_08ac02bafe5196e6ecff8b57664857f7 = $(`<div id="html_08ac02bafe5196e6ecff8b57664857f7" style="width: 100.0%; height: 100.0%;">     <b>Price:</b> $400,000<br>     <b>Bedrooms:</b> 3.0<br>     <b>Lot Size:</b> 32718.0 sqft<br>     <b>Condition:</b> 3<br>     <b>View:</b> 4.0     </div>`)[0];
+                popup_92e39da68c095bd736e9f5b19becf8e1.setContent(html_08ac02bafe5196e6ecff8b57664857f7);
+            
+        
+
+        marker_75e8a740b384f2ad463f3e0727ca1eee.bindPopup(popup_92e39da68c095bd736e9f5b19becf8e1)
+        ;
+
+        
+    
+    
+                marker_75e8a740b384f2ad463f3e0727ca1eee.setIcon(icon_146a9389f74463ed2f139e74c46b06cb);
+            
+    
+            var marker_154c3d213da97314d139618c9dde4390 = L.marker(
+                [47.4997, -122.379],
+                {
+}
+            ).addTo(map_25df3e4e908f4f0e398ee09455d12c4f);
+        
+    
+            var icon_fb060a4ad4b0350560be0b3015beac1d = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_9589fdaf336050a97b1e637a71c8a4e7 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_a799fcfedeb332550eb0d3ca775ef03f = $(`<div id="html_a799fcfedeb332550eb0d3ca775ef03f" style="width: 100.0%; height: 100.0%;">     <b>Price:</b> $540,000<br>     <b>Bedrooms:</b> 3.0<br>     <b>Lot Size:</b> 23361.0 sqft<br>     <b>Condition:</b> 3<br>     <b>View:</b> 4.0     </div>`)[0];
+                popup_9589fdaf336050a97b1e637a71c8a4e7.setContent(html_a799fcfedeb332550eb0d3ca775ef03f);
+            
+        
+
+        marker_154c3d213da97314d139618c9dde4390.bindPopup(popup_9589fdaf336050a97b1e637a71c8a4e7)
+        ;
+
+        
+    
+    
+                marker_154c3d213da97314d139618c9dde4390.setIcon(icon_fb060a4ad4b0350560be0b3015beac1d);
+            
+    
+            var marker_f23f72c5fd6a4b0666e9e916b137b75a = L.marker(
+                [47.3311, -122.375],
+                {
+}
+            ).addTo(map_25df3e4e908f4f0e398ee09455d12c4f);
+        
+    
+            var icon_51045f6b41280a42a8b9ead3aac30124 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_abdd8d7b0a873344d2c8bfcad7e77174 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_6e9ae450cec3ea3b37ea499e18c1f7ef = $(`<div id="html_6e9ae450cec3ea3b37ea499e18c1f7ef" style="width: 100.0%; height: 100.0%;">     <b>Price:</b> $629,000<br>     <b>Bedrooms:</b> 3.0<br>     <b>Lot Size:</b> 12367.0 sqft<br>     <b>Condition:</b> 4<br>     <b>View:</b> 4.0     </div>`)[0];
+                popup_abdd8d7b0a873344d2c8bfcad7e77174.setContent(html_6e9ae450cec3ea3b37ea499e18c1f7ef);
+            
+        
+
+        marker_f23f72c5fd6a4b0666e9e916b137b75a.bindPopup(popup_abdd8d7b0a873344d2c8bfcad7e77174)
+        ;
+
+        
+    
+    
+                marker_f23f72c5fd6a4b0666e9e916b137b75a.setIcon(icon_51045f6b41280a42a8b9ead3aac30124);
+            
+    
+            var marker_57d806bc14dcbee30038f864e550c203 = L.marker(
+                [47.3554, -122.324],
+                {
+}
+            ).addTo(map_25df3e4e908f4f0e398ee09455d12c4f);
+        
+    
+            var icon_b2dc9fe1f9e26d702248a40ebcfdaf6b = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_e46ca0c7786b06630730ecfd0326b3d7 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_bf63399f77c52eaf0d8a0e060a2b3910 = $(`<div id="html_bf63399f77c52eaf0d8a0e060a2b3910" style="width: 100.0%; height: 100.0%;">     <b>Price:</b> $650,000<br>     <b>Bedrooms:</b> 3.0<br>     <b>Lot Size:</b> 19386.0 sqft<br>     <b>Condition:</b> 3<br>     <b>View:</b> 4.0     </div>`)[0];
+                popup_e46ca0c7786b06630730ecfd0326b3d7.setContent(html_bf63399f77c52eaf0d8a0e060a2b3910);
+            
+        
+
+        marker_57d806bc14dcbee30038f864e550c203.bindPopup(popup_e46ca0c7786b06630730ecfd0326b3d7)
+        ;
+
+        
+    
+    
+                marker_57d806bc14dcbee30038f864e550c203.setIcon(icon_b2dc9fe1f9e26d702248a40ebcfdaf6b);
+            
+    
+            var marker_d990757d187f13d21321c6350227669b = L.marker(
+                [47.3844, -122.438],
+                {
+}
+            ).addTo(map_25df3e4e908f4f0e398ee09455d12c4f);
+        
+    
+            var icon_4306787ad01490141d0286cc0fbbc247 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_5d2bb3b95ff920c0f9621df0bbb1e0c6 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_c0853886ed9fb67d7bc27f015265100f = $(`<div id="html_c0853886ed9fb67d7bc27f015265100f" style="width: 100.0%; height: 100.0%;">     <b>Price:</b> $705,000<br>     <b>Bedrooms:</b> 3.0<br>     <b>Lot Size:</b> 20978.0 sqft<br>     <b>Condition:</b> 4<br>     <b>View:</b> 3.0     </div>`)[0];
+                popup_5d2bb3b95ff920c0f9621df0bbb1e0c6.setContent(html_c0853886ed9fb67d7bc27f015265100f);
+            
+        
+
+        marker_d990757d187f13d21321c6350227669b.bindPopup(popup_5d2bb3b95ff920c0f9621df0bbb1e0c6)
+        ;
+
+        
+    
+    
+                marker_d990757d187f13d21321c6350227669b.setIcon(icon_4306787ad01490141d0286cc0fbbc247);
+            
+    
+            var marker_bfd4f6080bf190361ddb572beddab023 = L.marker(
+                [47.4, -122.42],
+                {
+}
+            ).addTo(map_25df3e4e908f4f0e398ee09455d12c4f);
+        
+    
+            var icon_dc895db05006e880874f9b8d515e44b2 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_86b27245bb0d42ac6ec56cc33b873c75 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_7c208c36aabb5c8d3b715a7423b5fb9c = $(`<div id="html_7c208c36aabb5c8d3b715a7423b5fb9c" style="width: 100.0%; height: 100.0%;">     <b>Price:</b> $750,000<br>     <b>Bedrooms:</b> 3.0<br>     <b>Lot Size:</b> 69351.0 sqft<br>     <b>Condition:</b> 4<br>     <b>View:</b> 3.0     </div>`)[0];
+                popup_86b27245bb0d42ac6ec56cc33b873c75.setContent(html_7c208c36aabb5c8d3b715a7423b5fb9c);
+            
+        
+
+        marker_bfd4f6080bf190361ddb572beddab023.bindPopup(popup_86b27245bb0d42ac6ec56cc33b873c75)
+        ;
+
+        
+    
+    
+                marker_bfd4f6080bf190361ddb572beddab023.setIcon(icon_dc895db05006e880874f9b8d515e44b2);
+            
+    
+            var marker_0784972d520a51d3d51313fb011bb4c0 = L.marker(
+                [47.4996, -122.378],
+                {
+}
+            ).addTo(map_25df3e4e908f4f0e398ee09455d12c4f);
+        
+    
+            var icon_89e553771cbc8066f44ab21a47fb9b0f = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_503d49b58a2ae2a001fa20c5d0c676ea = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_0cc6add41e61334668ff3d4618e749d7 = $(`<div id="html_0cc6add41e61334668ff3d4618e749d7" style="width: 100.0%; height: 100.0%;">     <b>Price:</b> $750,000<br>     <b>Bedrooms:</b> 4.0<br>     <b>Lot Size:</b> 21834.0 sqft<br>     <b>Condition:</b> 3<br>     <b>View:</b> 4.0     </div>`)[0];
+                popup_503d49b58a2ae2a001fa20c5d0c676ea.setContent(html_0cc6add41e61334668ff3d4618e749d7);
+            
+        
+
+        marker_0784972d520a51d3d51313fb011bb4c0.bindPopup(popup_503d49b58a2ae2a001fa20c5d0c676ea)
+        ;
+
+        
+    
+    
+                marker_0784972d520a51d3d51313fb011bb4c0.setIcon(icon_89e553771cbc8066f44ab21a47fb9b0f);
+            
+    
+            var marker_e6fad7f004e3cc4d9a7c26263e993a8a = L.marker(
+                [47.5022, -122.223],
+                {
+}
+            ).addTo(map_25df3e4e908f4f0e398ee09455d12c4f);
+        
+    
+            var icon_cfd787eb9044526b98bd89a6177b97d3 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_fc394176866d581a864b1218c1510504 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_5bde2bf84b28ef399ba7c929fd573d07 = $(`<div id="html_5bde2bf84b28ef399ba7c929fd573d07" style="width: 100.0%; height: 100.0%;">     <b>Price:</b> $750,000<br>     <b>Bedrooms:</b> 5.0<br>     <b>Lot Size:</b> 13290.0 sqft<br>     <b>Condition:</b> 4<br>     <b>View:</b> 4.0     </div>`)[0];
+                popup_fc394176866d581a864b1218c1510504.setContent(html_5bde2bf84b28ef399ba7c929fd573d07);
+            
+        
+
+        marker_e6fad7f004e3cc4d9a7c26263e993a8a.bindPopup(popup_fc394176866d581a864b1218c1510504)
+        ;
+
+        
+    
+    
+                marker_e6fad7f004e3cc4d9a7c26263e993a8a.setIcon(icon_cfd787eb9044526b98bd89a6177b97d3);
+            
+    
+            var marker_c1ee0db038b898e7efa55adb94edf248 = L.marker(
+                [47.4536, -122.376],
+                {
+}
+            ).addTo(map_25df3e4e908f4f0e398ee09455d12c4f);
+        
+    
+            var icon_53bc3616d3001f6d04cdbb77464c6033 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_dc5b8e2a51bf56e5f9b482b9b099c6b1 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_4b3ac39f3617fedf2784299f893337c2 = $(`<div id="html_4b3ac39f3617fedf2784299f893337c2" style="width: 100.0%; height: 100.0%;">     <b>Price:</b> $770,000<br>     <b>Bedrooms:</b> 3.0<br>     <b>Lot Size:</b> 21744.0 sqft<br>     <b>Condition:</b> 4<br>     <b>View:</b> 4.0     </div>`)[0];
+                popup_dc5b8e2a51bf56e5f9b482b9b099c6b1.setContent(html_4b3ac39f3617fedf2784299f893337c2);
+            
+        
+
+        marker_c1ee0db038b898e7efa55adb94edf248.bindPopup(popup_dc5b8e2a51bf56e5f9b482b9b099c6b1)
+        ;
+
+        
+    
+    
+                marker_c1ee0db038b898e7efa55adb94edf248.setIcon(icon_53bc3616d3001f6d04cdbb77464c6033);
+            
+    
+            var marker_7c1b00413799c7c0104932884efd548e = L.marker(
+                [47.5105, -122.238],
+                {
+}
+            ).addTo(map_25df3e4e908f4f0e398ee09455d12c4f);
+        
+    
+            var icon_3ff8a87bc3b7b3c9a4c1ab6279594e2e = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_c5d81153f6acc0000eb50475d5964f66 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_97894decf021fc7490148476480a1cd7 = $(`<div id="html_97894decf021fc7490148476480a1cd7" style="width: 100.0%; height: 100.0%;">     <b>Price:</b> $790,000<br>     <b>Bedrooms:</b> 4.0<br>     <b>Lot Size:</b> 10061.0 sqft<br>     <b>Condition:</b> 3<br>     <b>View:</b> 4.0     </div>`)[0];
+                popup_c5d81153f6acc0000eb50475d5964f66.setContent(html_97894decf021fc7490148476480a1cd7);
+            
+        
+
+        marker_7c1b00413799c7c0104932884efd548e.bindPopup(popup_c5d81153f6acc0000eb50475d5964f66)
+        ;
+
+        
+    
+    
+                marker_7c1b00413799c7c0104932884efd548e.setIcon(icon_3ff8a87bc3b7b3c9a4c1ab6279594e2e);
+            
+    
+            var marker_911f2dedf3babac772882ded1706f64b = L.marker(
+                [47.3573, -122.324],
+                {
+}
+            ).addTo(map_25df3e4e908f4f0e398ee09455d12c4f);
+        
+    
+            var icon_c708ad8d3a3565c3009f12bf1dcfc827 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_e5de20136d6cfce9984764b4137d3df5 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_1d32e5b0a27e485806a955ad009de2a3 = $(`<div id="html_1d32e5b0a27e485806a955ad009de2a3" style="width: 100.0%; height: 100.0%;">     <b>Price:</b> $820,000<br>     <b>Bedrooms:</b> 3.0<br>     <b>Lot Size:</b> 10711.0 sqft<br>     <b>Condition:</b> 3<br>     <b>View:</b> 4.0     </div>`)[0];
+                popup_e5de20136d6cfce9984764b4137d3df5.setContent(html_1d32e5b0a27e485806a955ad009de2a3);
+            
+        
+
+        marker_911f2dedf3babac772882ded1706f64b.bindPopup(popup_e5de20136d6cfce9984764b4137d3df5)
+        ;
+
+        
+    
+    
+                marker_911f2dedf3babac772882ded1706f64b.setIcon(icon_c708ad8d3a3565c3009f12bf1dcfc827);
+            
+    
+            var marker_6b2d18492174eab78d393b3fc1c9afe3 = L.marker(
+                [47.3571, -122.324],
+                {
+}
+            ).addTo(map_25df3e4e908f4f0e398ee09455d12c4f);
+        
+    
+            var icon_20a9fb66408599f063df94cd680b7740 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_909dd0044a802f1969c28ea928fd76a0 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_4b0f61041fb1a2390a3905e9b5d58582 = $(`<div id="html_4b0f61041fb1a2390a3905e9b5d58582" style="width: 100.0%; height: 100.0%;">     <b>Price:</b> $835,000<br>     <b>Bedrooms:</b> 3.0<br>     <b>Lot Size:</b> 12523.0 sqft<br>     <b>Condition:</b> 4<br>     <b>View:</b> 4.0     </div>`)[0];
+                popup_909dd0044a802f1969c28ea928fd76a0.setContent(html_4b0f61041fb1a2390a3905e9b5d58582);
+            
+        
+
+        marker_6b2d18492174eab78d393b3fc1c9afe3.bindPopup(popup_909dd0044a802f1969c28ea928fd76a0)
+        ;
+
+        
+    
+    
+                marker_6b2d18492174eab78d393b3fc1c9afe3.setIcon(icon_20a9fb66408599f063df94cd680b7740);
+            
+    
+            var marker_782ffdba027cb7aae8b07ff7f070fd85 = L.marker(
+                [47.5114, -122.245],
+                {
+}
+            ).addTo(map_25df3e4e908f4f0e398ee09455d12c4f);
+        
+    
+            var icon_14cc5a6094f0c95eb1bd39445c1e95a4 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_7d3fff8ba2545db6cfbdd64dad7f9522 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_dac218900aa986b8437107478d681b3a = $(`<div id="html_dac218900aa986b8437107478d681b3a" style="width: 100.0%; height: 100.0%;">     <b>Price:</b> $840,500<br>     <b>Bedrooms:</b> 4.0<br>     <b>Lot Size:</b> 12174.0 sqft<br>     <b>Condition:</b> 3<br>     <b>View:</b> 4.0     </div>`)[0];
+                popup_7d3fff8ba2545db6cfbdd64dad7f9522.setContent(html_dac218900aa986b8437107478d681b3a);
+            
+        
+
+        marker_782ffdba027cb7aae8b07ff7f070fd85.bindPopup(popup_7d3fff8ba2545db6cfbdd64dad7f9522)
+        ;
+
+        
+    
+    
+                marker_782ffdba027cb7aae8b07ff7f070fd85.setIcon(icon_14cc5a6094f0c95eb1bd39445c1e95a4);
+            
+    
+            var marker_20dd2ffd1079ad7dbbe729382dc73d9e = L.marker(
+                [47.4522, -122.378],
+                {
+}
+            ).addTo(map_25df3e4e908f4f0e398ee09455d12c4f);
+        
+    
+            var icon_cccd86f8bcc847295d3ce16d8f000dc4 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_a1511cf57a1a8a25f93cc131167cab37 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_d1f9130cb66918b8b33f5b4722818fe6 = $(`<div id="html_d1f9130cb66918b8b33f5b4722818fe6" style="width: 100.0%; height: 100.0%;">     <b>Price:</b> $947,500<br>     <b>Bedrooms:</b> 3.0<br>     <b>Lot Size:</b> 27144.0 sqft<br>     <b>Condition:</b> 5<br>     <b>View:</b> 2.0     </div>`)[0];
+                popup_a1511cf57a1a8a25f93cc131167cab37.setContent(html_d1f9130cb66918b8b33f5b4722818fe6);
+            
+        
+
+        marker_20dd2ffd1079ad7dbbe729382dc73d9e.bindPopup(popup_a1511cf57a1a8a25f93cc131167cab37)
+        ;
+
+        
+    
+    
+                marker_20dd2ffd1079ad7dbbe729382dc73d9e.setIcon(icon_cccd86f8bcc847295d3ce16d8f000dc4);
+            
+    
+            var marker_1a628817bf6cbacede0249e54bf72bff = L.marker(
+                [47.3881, -122.326],
+                {
+}
+            ).addTo(map_25df3e4e908f4f0e398ee09455d12c4f);
+        
+    
+            var icon_fc6866e84119d72a3fa3d724c7632cf0 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_547bab0341444a44a228529b98ef7428 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_5f7e526cbcbdf59d65c6bf0222dad37d = $(`<div id="html_5f7e526cbcbdf59d65c6bf0222dad37d" style="width: 100.0%; height: 100.0%;">     <b>Price:</b> $950,000<br>     <b>Bedrooms:</b> 3.0<br>     <b>Lot Size:</b> 18892.0 sqft<br>     <b>Condition:</b> 4<br>     <b>View:</b> 4.0     </div>`)[0];
+                popup_547bab0341444a44a228529b98ef7428.setContent(html_5f7e526cbcbdf59d65c6bf0222dad37d);
+            
+        
+
+        marker_1a628817bf6cbacede0249e54bf72bff.bindPopup(popup_547bab0341444a44a228529b98ef7428)
+        ;
+
+        
+    
+    
+                marker_1a628817bf6cbacede0249e54bf72bff.setIcon(icon_fc6866e84119d72a3fa3d724c7632cf0);
+            
+    
+            var marker_191e3add46e477f46af612a1f65f048b = L.marker(
+                [47.4969, -122.376],
+                {
+}
+            ).addTo(map_25df3e4e908f4f0e398ee09455d12c4f);
+        
+    
+            var icon_094d2e263212e8263d0ad3625277efaf = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_18e4fe954bd0b377bcc1f665c5be8004 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_0e72e1ad33dd85c7eb36568774a2f19c = $(`<div id="html_0e72e1ad33dd85c7eb36568774a2f19c" style="width: 100.0%; height: 100.0%;">     <b>Price:</b> $975,000<br>     <b>Bedrooms:</b> 6.0<br>     <b>Lot Size:</b> 54160.0 sqft<br>     <b>Condition:</b> 3<br>     <b>View:</b> 4.0     </div>`)[0];
+                popup_18e4fe954bd0b377bcc1f665c5be8004.setContent(html_0e72e1ad33dd85c7eb36568774a2f19c);
+            
+        
+
+        marker_191e3add46e477f46af612a1f65f048b.bindPopup(popup_18e4fe954bd0b377bcc1f665c5be8004)
+        ;
+
+        
+    
+    
+                marker_191e3add46e477f46af612a1f65f048b.setIcon(icon_094d2e263212e8263d0ad3625277efaf);
+            
+    
+            var marker_af74d77df10a4ec49d1bbf76306dedfc = L.marker(
+                [47.45, -122.377],
+                {
+}
+            ).addTo(map_25df3e4e908f4f0e398ee09455d12c4f);
+        
+    
+            var icon_4ee29498cdf9b242d37570962460f0fe = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_2c77845f6e2e7f8dcaa6f3cab2858951 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_c31c8c8a83e5cd952636a3cb98bcbfcc = $(`<div id="html_c31c8c8a83e5cd952636a3cb98bcbfcc" style="width: 100.0%; height: 100.0%;">     <b>Price:</b> $988,500<br>     <b>Bedrooms:</b> 3.0<br>     <b>Lot Size:</b> 16807.0 sqft<br>     <b>Condition:</b> 3<br>     <b>View:</b> 4.0     </div>`)[0];
+                popup_2c77845f6e2e7f8dcaa6f3cab2858951.setContent(html_c31c8c8a83e5cd952636a3cb98bcbfcc);
+            
+        
+
+        marker_af74d77df10a4ec49d1bbf76306dedfc.bindPopup(popup_2c77845f6e2e7f8dcaa6f3cab2858951)
+        ;
+
+        
+    
+    
+                marker_af74d77df10a4ec49d1bbf76306dedfc.setIcon(icon_4ee29498cdf9b242d37570962460f0fe);
+            
+    
+            var marker_4ce5a09796d6d8e5468c30921276aae0 = L.marker(
+                [47.4734, -122.365],
+                {
+}
+            ).addTo(map_25df3e4e908f4f0e398ee09455d12c4f);
+        
+    
+            var icon_6874fe7606f541423ba77e5c01051bb6 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_f2dc88cd0e751c7c51c30b534e90e4d0 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_5de11edfcb82a8f0195822d3ad91b468 = $(`<div id="html_5de11edfcb82a8f0195822d3ad91b468" style="width: 100.0%; height: 100.0%;">     <b>Price:</b> $995,000<br>     <b>Bedrooms:</b> 3.0<br>     <b>Lot Size:</b> 47044.0 sqft<br>     <b>Condition:</b> 3<br>     <b>View:</b> 3.0     </div>`)[0];
+                popup_f2dc88cd0e751c7c51c30b534e90e4d0.setContent(html_5de11edfcb82a8f0195822d3ad91b468);
+            
+        
+
+        marker_4ce5a09796d6d8e5468c30921276aae0.bindPopup(popup_f2dc88cd0e751c7c51c30b534e90e4d0)
+        ;
+
+        
+    
+    
+                marker_4ce5a09796d6d8e5468c30921276aae0.setIcon(icon_6874fe7606f541423ba77e5c01051bb6);
+            
+    
+            var marker_39ecd521253d123a36e5e5ec5058b801 = L.marker(
+                [47.3782, -122.514],
+                {
+}
+            ).addTo(map_25df3e4e908f4f0e398ee09455d12c4f);
+        
+    
+            var icon_e6cae72ef86cb3ff23cfeedbf8ac4448 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_2febf081ee82895c67e5921bb8248c01 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_3a4be284d5704fdc3172554a007ad690 = $(`<div id="html_3a4be284d5704fdc3172554a007ad690" style="width: 100.0%; height: 100.0%;">     <b>Price:</b> $999,000<br>     <b>Bedrooms:</b> 3.0<br>     <b>Lot Size:</b> 505166.0 sqft<br>     <b>Condition:</b> 4<br>     <b>View:</b> 3.0     </div>`)[0];
+                popup_2febf081ee82895c67e5921bb8248c01.setContent(html_3a4be284d5704fdc3172554a007ad690);
+            
+        
+
+        marker_39ecd521253d123a36e5e5ec5058b801.bindPopup(popup_2febf081ee82895c67e5921bb8248c01)
+        ;
+
+        
+    
+    
+                marker_39ecd521253d123a36e5e5ec5058b801.setIcon(icon_e6cae72ef86cb3ff23cfeedbf8ac4448);
+            
+</script>
+</html>
