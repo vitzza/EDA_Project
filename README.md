@@ -58,4 +58,15 @@ Template for creating ds simple projects
 
    ```Bash
    python.exe -m pip install --upgrade pip
+
    ```
+## **`EDA:`** 
+
+- `Folder:`Deliverables_EDA_Vitória
+
+`Content:` 
+```
+- DataFramExport : Exported .csv files that are used for readability, since the output in the notebook is not allways complete
+- Result_Graphics : Exported images from diagrams or other sources, used for the analysis
+- EDA_Notebook_Vitoria : Jupyter notebook with all the code and explanations that were used for the analysis
+```

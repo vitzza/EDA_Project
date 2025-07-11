@@ -144,3 +144,7 @@ models/*.pkl
 
 # vscode Stuff
 .vscode
+
+# Local
+Local/
+Maps/
