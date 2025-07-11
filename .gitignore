@@ -146,5 +146,5 @@ models/*.pkl
 .vscode
 
 # Local
-Local/
-Maps/
+/Deliverables_EDA_Vitoria/Local/
+/Deliverables_EDA_Vitoria/Maps/
